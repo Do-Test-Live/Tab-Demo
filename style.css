@@ -1,0 +1,72 @@
+/*Vertical Tabs*/
+.vertical-mdl-tabs {
+    margin-top: 30px;
+}
+.vertical-mdl-tabs .mdl-tabs__tab-bar {
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-bottom: 35px;
+    height: inherit;
+    border-bottom: none;
+    border-right: 1px solid rgba(10, 11, 49, 0.20);
+}
+
+.vertical-mdl-tabs .mdl-tabs__tab {
+    width: 100%;
+    height: 100%;
+    line-height: 50px;
+    box-sizing: border-box;
+    letter-spacing: 2px;
+    margin-top: 20px;
+}
+
+.vertical-mdl-tabs .mdl-tabs__tab:hover {
+  background: rgba(158, 158, 158, 0.34);
+  color: black;
+}
+
+.vertical-mdl-tabs.mdl-tabs.is-upgraded a.mdl-tabs__tab.is-active {
+    background-image: url("image/buttonback.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height:100%;
+}
+.vertical-mdl-tabs.mdl-tabs.is-upgraded .mdl-tabs__tab.is-active:after {
+    content: inherit;
+    height: 0;
+}
+
+.vertical-mdl-tabs.mdl-tabs.is-upgraded .mdl-tabs__panel.is-active, .mdl-tabs__panel {
+    padding: 0 30px;
+}
+
+.vertical-mdl-tabs.mdl-tabs .mdl-tabs__tab {
+    text-align: left;
+}
+
+.main-section{
+    margin: 30px 100px;
+}
+
+.text-design{
+    margin: 20px 200px;
+    line-height: 1.625;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+body{
+    background: url("image/11.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.image{
+    width: 100%;
+}
+
+.button-image{
+    height: 50px;
+}
