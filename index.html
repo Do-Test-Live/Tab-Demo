@@ -2,8 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>CodePen - Vertical Tabs With Material Design Lite</title>
-    <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.1.0/material.indigo-pink.min.css">
+    <title>CodePen - Vertical tabs</title>
     <link rel="stylesheet" href="./style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -11,64 +10,119 @@
 </head>
 <body>
 <!-- partial:index.partial.html -->
-<section class="main-section">
-    <div class="row text-center">
-        <h1 style="font-size: 4.5rem;" class="text-white">TRUE OWNERSHIP</h1>
-    </div>
-    <div class="row">
-        <div class="col-12">
-            <img src="line.png" alt="" style="width:50%" class="mx-auto d-block">
-        </div>
-        <div class="col-12 text-center my-3">
-            <p class="text-design text-white">We believe that players should be able to earn real value for their time invested in the game. This truly
-                player-owned ecosystem puts the player in control of what happens to these cosmetics and what they want to do with them.
-            </p>
-        </div>
 
+
+<div class="row text-center">
+    <h1 style="font-size: 4.5rem;" class="text-white">LAND DEMO</h1>
+</div>
+<div class="row mb-5">
+    <div class="col-12">
+        <img src="images/line.png" alt="" style="width:50%" class="mx-auto d-block">
     </div>
-    <div class="mdl-tabs vertical-mdl-tabs mdl-js-tabs mdl-js-ripple-effect">
-        <div class="mdl-grid mdl-grid--no-spacing">
-            <div class="mdl-cell mdl-cell--2-col">
-                <div class="mdl-tabs__tab-bar">
-                    <a href="#tab1-panel" class="mdl-tabs__tab is-active">
-                        <span class="hollow-circle"></span>
-                        <img src="image/button.png" class="button-image py-2 mx-auto">
-                    </a>
-                    <a href="#tab2-panel" class="mdl-tabs__tab">
-                        <span class="hollow-circle"></span>
-                        <img src="image/button.png" class="button-image py-2 mx-auto">
-                    </a>
-                    <a href="#tab3-panel" class="mdl-tabs__tab">
-                        <span class="hollow-circle"></span>
-                        <img src="image/button.png" class="button-image py-2 mx-auto">
-                    </a>
-                    <a href="#tab4-panel" class="mdl-tabs__tab">
-                        <span class="hollow-circle"></span>
-                        <img src="image/button.png" class="button-image py-2 mx-auto">
-                    </a>
-                </div>
+    <div class="col-12 text-center my-3">
+        <p class="text-design text-white">We believe that players should be able to earn real value for their time
+            invested in the game. This truly<br>
+            player-owned ecosystem puts the player in control of what happens to these cosmetics and what they want
+            to
+            do with them.
+        </p>
+    </div>
+
+</div>
+<div class="tab">
+    <button class="tablinks" onclick="openTab(event, 'firstTab')" id="defaultOpen"><img src="images/button.png"
+                                                                                        style="height: 40px" ;/>
+    </button>
+    <button class="tablinks" onclick="openTab(event, 'secondTab')"><img src="images/button.png" style="height: 40px"
+                                                                        ;/>
+    </button>
+    <button class="tablinks" onclick="openTab(event, 'thirdTab')"><img src="images/button.png" style="height: 40px"
+                                                                       ;/>
+    </button>
+    <button class="tablinks" onclick="openTab(event, 'fourthTab')"><img src="images/button.png" style="height: 40px"
+                                                                        ;/>
+    </button>
+</div>
+
+<div id="firstTab" class="tabcontent">
+    <div class="row">
+        <div class="col-lg-5 col-sm-12">
+            <div class="row">
+                <img src="images/1.png" alt="" style="width: 50%" class="mx-auto d-block">
             </div>
-            <div class="mdl-cell mdl-cell--10-col">
-                <div class="mdl-tabs__panel is-active" id="tab1-panel">
-                    <img src="image/4.png" class="image">
-                </div>
-                <div class="mdl-tabs__panel" id="tab2-panel">
-                    <img src="image/5.png" class="image">
-                </div>
-                <div class="mdl-tabs__panel" id="tab3-panel">
-                    <img src="image/4.png" class="image">
-                </div>
-                <div class="mdl-tabs__panel" id="tab4-panel">
-                    <img src="image/5.png" class="image">
-                </div>
+            <div class="row">
+                <p class="description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                    Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took
+                    a galley of type and scrambled it to make a type specimen book. It has survived not only five
+                    centuries, but also the leap into electronic typesetting, remaining essentially </p>
             </div>
         </div>
+        <div class="col-lg-7 col-sm-12">
+            <img src="images/5.png" alt="" width="100%" class="right-image">
+        </div>
     </div>
-</section>
+</div>
+
+<div id="secondTab" class="tabcontent">
+    <div class="row">
+        <div class="col-lg-5 col-sm-12">
+            <div class="row">
+                <img src="images/2.png" alt="" style="width: 50%" class="mx-auto d-block">
+            </div>
+            <div class="row">
+                <p class="description">There are many variations of passages of Lorem Ipsum available, but the majority
+                    have suffered alteration in some form, by injected humour, or randomised words which don't look even
+                    slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there
+                    isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators</p>
+            </div>
+        </div>
+        <div class="col-lg-7 col-sm-12">
+            <img src="images/6.png" alt="" width="100%" class="right-image">
+        </div>
+    </div>
+</div>
+
+<div id="thirdTab" class="tabcontent">
+    <div class="row">
+        <div class="col-lg-5 col-sm-12">
+            <div class="row">
+                <img src="images/3.png" alt="" style="width: 50%" class="mx-auto d-block">
+            </div>
+            <div class="row">
+                <p class="description">The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for
+                    those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are
+                    also reproduced in their exact original form, accompanied by English versions from the 1914
+                    translation by H. Rackham.</p>
+            </div>
+        </div>
+        <div class="col-lg-7 col-sm-12">
+            <img src="images/7.png" alt="" width="100%" class="right-image">
+        </div>
+    </div>
+</div>
+
+<div id="fourthTab" class="tabcontent">
+    <div class="row">
+        <div class="col-lg-5 col-sm-12">
+            <div class="row">
+                <img src="images/4.png" alt="" style="width: 50%" class="mx-auto d-block">
+            </div>
+            <div class="row">
+                <p class="description">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+            </div>
+        </div>
+        <div class="col-lg-7 col-sm-12">
+            <img src="images/8.png" alt="" width="100%" class="right-image">
+        </div>
+    </div>
+</div>
 <!-- partial -->
-<script src='https://storage.googleapis.com/code.getmdl.io/1.1.0/material.min.js'></script>
+<script src="./script.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
+
 </body>
 </html>
